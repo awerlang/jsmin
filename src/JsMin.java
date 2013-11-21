@@ -8,7 +8,7 @@ import org.antlr.runtime.Token;
 import java.util.HashMap;
 import java.io.PrintStream;
 
-public class Test {
+public class JsMin {
 
 	static HashMap<String, String> memory = new HashMap<String, String>();
 	int idn = 0;

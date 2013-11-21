@@ -10,5 +10,5 @@ del bin\*.class
 "%jdk%\javac" src\*.java src\output\*.java -d bin
 
 cd bin
-java Test ..\samples\input2.js ..\samples\output2.js
+java JsMin ..\samples\input2.js ..\samples\output2.js
 pause
