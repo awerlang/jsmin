@@ -1,5 +1,5 @@
 function validarCPF(cpf) {
-    //cpf = cpf.replace(/[^\d]+/g,'');
+    cpf = cpf.replace(/[^\d]+/g,'');
  
     if(cpf == '') return false;
  

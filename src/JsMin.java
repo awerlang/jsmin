@@ -240,7 +240,7 @@ public class JsMin {
 				if (i + 3 < t.getChildCount() 
 					&& t.getChild(i+0).getType() == JavaScriptParser.Identifier
 					&& t.getChild(i+1).getType() == JavaScriptParser.T__60 // =
-					&& token.equals(((JsAST)t.getChild(i+2)).text)
+					&& ((JsAST)t.getChild(i+0)).text.equals(((JsAST)t.getChild(i+2)).text)
 					&& t.getChild(i+3).getType() == JavaScriptParser.T__44) // +
 				{
 					out.print(token + "+=");
@@ -308,6 +308,7 @@ public class JsMin {
 		}
 		
 		printTree(ast, 0, out);
+		System.out.println("");
 	}
 	
 	/**
